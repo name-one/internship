@@ -1,0 +1,23 @@
+{
+  "title": "Nokia 3310",
+  "smartphone": false,
+  "screenType": "monocrome" ,
+  "screenRes": "128x128",
+  "netWorkType": "GSM",
+  "image": "nokia-3310.png",
+  "simFormat": "standart sim",
+  "camera": {
+    "status": false
+  },
+  "memoryCard": {
+    "status": false
+  },
+  "internet": {
+    "status": false
+  },
+  "battery": {
+    "type": "li-on",
+    "space": "800"
+  }
+
+}

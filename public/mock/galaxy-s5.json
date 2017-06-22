@@ -1,0 +1,30 @@
+{
+  "title": "Samsung Galaxy s5",
+  "smartphone": true,
+  "screenType": "IPS",
+  "screenRes": "640x360",
+  "netWorkType": "GSM",
+  "image": "galaxy-s5.jpeg",
+  "simFormat": "microSim",
+  "camera": {
+    "status": true,
+    "resolution": "16"
+  },
+  "memoryCard": {
+    "status": true,
+    "format": "microSd",
+    "memorySpace": "128"
+  },
+  "internet": {
+    "status": true,
+    "type": "LTE"
+  },
+  "battery": {
+    "type": "li-on",
+    "space": "2800"
+  },
+  "os": {
+    "name": "Android",
+    "version": "6.0"
+  }
+}
