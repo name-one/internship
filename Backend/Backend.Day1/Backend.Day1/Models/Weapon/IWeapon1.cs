@@ -1,10 +1,9 @@
 ﻿namespace Backend.Day1.Models.Weapon
 {
-    public interface IWeapon
+       public interface IWeapon1
     {
-        Bullet CreateBullet();
-       
+        Burst CreateBurst();
+
         void Shot(Game game);
     }
-   
 }

@@ -22,6 +22,7 @@ namespace Backend.Day1.Models
         }
 
         public IWeapon Weapon { get; set; }
+        public IWeapon1 Weapon1 { get; set; }
 
         public int Direction { get; set; }
     }

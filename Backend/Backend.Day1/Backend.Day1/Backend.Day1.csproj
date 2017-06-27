@@ -41,12 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Burst.cs" />
     <Compile Include="Models\Bullet.cs" />
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\GameObject.cs" />
     <Compile Include="Models\IGame.cs" />
     <Compile Include="Models\IProcessable.cs" />
     <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\Rock.cs" />
+    <Compile Include="Models\Weapon\AK47.cs" />
+    <Compile Include="Models\Weapon\IWeapon1.cs" />
     <Compile Include="Models\Weapon\Riffle.cs" />
     <Compile Include="Models\Tree.cs" />
     <Compile Include="Models\Weapon\IWeapon.cs" />

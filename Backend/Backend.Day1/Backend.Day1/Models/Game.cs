@@ -14,7 +14,7 @@ namespace Backend.Day1.Models
             Objects = new List<GameObject>();
             Player = new Person("Me")
             {
-                X = 6,
+                X = 12,
                 Y = 6,
             };
             AddObject(Player);
