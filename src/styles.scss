@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/common-styles/variables";
+html{
+  font-size: 16px;
+}
+body{
+  background-color: $deep-purple-200;
+  font-family: $roboto;
+}
+.app{
+  box-shadow: 0px 1px 1px 1px rgba(0,0,0,.3);
+}

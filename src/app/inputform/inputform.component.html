@@ -1,0 +1,10 @@
+<div class="taskbar">
+  <h3 class="taskbar__title">ADD NEW TASK</h3>
+  <form class="taskbar__form" (submit)="addTask($event)" (keyup)="addTask($event)">
+    <label for="taskbar__task-name" class="taskbar__label">TASK NAME</label>
+    <input type="text" id="taskbar__task-name" class="taskbar__task-name" placeholder="name" maxlength="20">
+    <label for="taskbar__task-descr" class="taskbar__label">TASK DESCRIPTION</label>
+    <textarea class="taskbar__task-descr" id="taskbar__task-descr" placeholder="write a short description" maxlength="100"></textarea>
+    <button class="taskbar__submit button">add</button>
+  </form>
+</div>
