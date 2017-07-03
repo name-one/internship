@@ -1,0 +1,64 @@
+@import '.././variables';
+@mixin toggleAnimation($name){
+  animation: {
+    name: $name;
+    duration: .3s;
+    iteration-count: 1;
+    fill-mode: forwards;
+  }
+}
+@keyframes top-line{
+  from{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(5px);
+  }
+  to{
+    transform: translateY(5px) rotate(45deg);
+  }
+}
+@keyframes bottom-line{
+  from{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-5px);
+  }
+  to{
+    transform: translateY(-5px) rotate(-45deg);
+  }
+}
+.nav-toggle{
+  $this: '.nav-toggle';
+  border: none;
+  background-color: transparent;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  outline: none;
+  &__line{
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 3px;
+    transition: all .3s;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  &_shown{
+    #{$this}__line{
+      &:nth-of-type(2){
+        opacity: 0;
+      }
+      &:first-of-type{
+        @include toggleAnimation(top-line);
+      }
+      &:last-of-type{
+        @include toggleAnimation(bottom-line);
+      }
+    }
+  }
+}
