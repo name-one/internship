@@ -1,0 +1,28 @@
+﻿<div class="todos">
+    <div>
+        <form (submit)="addTodo($event)">
+            <input [(ngModel)]="newTodo" (keyup.enter)="newTodo=''" class="textfield" name="newTodo"/>
+            <button type="submit" [disabled]="newTodo===''">Add Todo</button>
+        </form>
+    </div>
+    
+    <div [hidden]="newTodo">
+        Type in new todo..
+    </div>
+    
+    <div [hidden]="!newTodo">
+        Typing: {{newTodo}}
+    </div>
+    
+    <ul>
+        <li *ngFor="let todo of todos; let i=index">
+            <input type="checkbox" class="checkbox" [(ngModel)]="todo.completed"/>
+            <span [ngClass]="{'checked':todo.completed}">{{todo.newTodo}}</span>
+            <span (click)="deleteTodo(i)" class="delete-icon">[X]</span>
+        </li>
+    </ul>
+    
+    <div class="mtop20">
+        <button (click)="deleteSelectedTodos()">Delete Selected</button>
+    </div>
+</div>
